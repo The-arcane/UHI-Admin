@@ -10,6 +10,7 @@ import { HeartPulse, CalendarDays, Beaker, Tablet } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { DashboardClient } from './dashboard-client';
 
+export const revalidate = 0;
 
 export default async function DashboardPage() {
   const stats = await fetchDashboardStats();

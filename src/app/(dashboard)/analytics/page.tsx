@@ -2,6 +2,8 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { fetchChartData } from "@/lib/actions";
 import { AnalyticsClient } from "./analytics-client";
 
+export const revalidate = 0;
+
 export default async function AnalyticsPage() {
   const { appointmentTrend, appointmentsByStatus, doctorSpecializations } = await fetchChartData();
 
